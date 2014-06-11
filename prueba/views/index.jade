@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  header
+     h1= title
+
+    section
+       form(action='/',method='post')
+          label(for='nombre') Nombre de la Persona:
+          textarea(name='nombre',required)
+          button(type='submit') Guardar
+
+    each amigo in datos
+        
+        tr#datos
+          td=amigo
+   footer
+         *CoProductores Tavo Araya  && Michael Jiménez
+    
